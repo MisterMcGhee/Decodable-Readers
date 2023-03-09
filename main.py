@@ -1,4 +1,3 @@
-import random
 import requests
 import openai
 
@@ -30,6 +29,7 @@ def get_target_grapheme(grapheme_list):
     return target_grapheme
 
 
+# Need to cull the list of generated words to remove words with
 def get_grapheme_words(target_grapheme):
     url = "http://api.datamuse.com/words?sp=*" + target_grapheme + "*"
     response = requests.get(url)
