@@ -5,6 +5,7 @@ import openai
 # keys
 openaikey = ""
 
+
 # Saves sightwords to a list
 def load_sight_words():
     f = open('sightwords.txt', 'r')
