@@ -1,5 +1,6 @@
 import requests
 import openai
+import nltk
 
 # keys
 openaikey = ""
