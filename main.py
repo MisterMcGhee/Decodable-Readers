@@ -36,12 +36,16 @@ def get_grapheme_words(target_grapheme):
     words = response.json()
     return [word["word"] for word in words]
 
+def sort_grapheme_words_by_length(grapheme_words):
+    return sorted(grapheme_words, key=len)
+
 
 def main():
     sight_words_list = load_sight_words()
     grapheme_list = load_graphemes()
     target_grapheme = get_target_grapheme(grapheme_list)
     grapheme_words = get_grapheme_words(target_grapheme)
+    grapheme_words = sort_grapheme_words_by_length(grapheme_words)
     print(grapheme_words)
 
 
