@@ -22,11 +22,16 @@ function Login () {
     {isVerified ? <App />
       :
      (
-      <form onSubmit={checkPw}>
-        <img src={clogo} className="App-clogo" alt="clogo" />
-       <input id="password" name="password" />
-       <button>open sesame</button>
-      </form>
+    <div className="Login">
+        <header className="Login-header">
+                <img src={clogo} className="Login-clogo" alt="clogo" />
+                <form onSubmit={checkPw} className="Login-form">
+                    <p>Password</p>  
+                    <input id="password" name="password" />
+                <button className="Login-button">open sesame</button>
+                </form>
+        </header>
+    </div>
     )}
     </>
    );
