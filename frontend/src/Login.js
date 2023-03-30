@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import clogo from './clogo.svg';
 import './Login.css';
 import App from './App';
 
@@ -22,6 +23,7 @@ function Login () {
       :
      (
       <form onSubmit={checkPw}>
+        <img src={clogo} className="App-clogo" alt="clogo" />
        <input id="password" name="password" />
        <button>open sesame</button>
       </form>
