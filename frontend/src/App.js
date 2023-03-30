@@ -23,7 +23,7 @@ function App() {
         <div>{getMessage.status === 200 ? 
           <h3>{getMessage.data.message}</h3>
           :
-          <h3>LOADING Codafon</h3>}</div>
+          <h3>Login</h3>}</div>
       </header>
     </div>
   );
