@@ -26,9 +26,8 @@ function Login () {
         <header className="Login-header">
                 <img src={clogo} className="Login-clogo" alt="clogo" />
                 <form onSubmit={checkPw} className="Login-form">
-                    <p>Password</p>  
-                    <input id="password" name="password" />
-                <button className="Login-button">open sesame</button>
+                    <input className="Login-input" placeholder="password" id="password" name="password"/>
+                    <button className="Login-button">Login</button>
                 </form>
         </header>
     </div>
